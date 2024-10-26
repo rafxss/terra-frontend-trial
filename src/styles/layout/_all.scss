@@ -1,0 +1,40 @@
+.wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:1200px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width:800px) {
+  .wrapper {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+// FOR COPY PASTE IN ALL THE OTHERS MODULES
+
+@media (min-width:2000px) {}
+@media (min-width:1600px) {}
+@media (max-width: 1499px){}
+@media (max-width: 1399px){}
+@media (max-width: 1299px){}
+@media (max-width: 1199px){}
+@media (max-width: 1149px){}
+@media (max-width: 1099px){}
+@media(max-width: 999px){}
+@media(max-width: 899px){}
+@media(max-width: 799px){}
+@media(max-width: 699px){}
+@media(max-width: 599px){}
+@media(max-width: 499px){}
+@media(max-width: 399px){}
+@media(max-width: 349px){}
+@media(max-width: 330px){}
+@media(max-width: 300px){}

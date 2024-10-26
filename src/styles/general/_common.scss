@@ -1,0 +1,26 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: unset;
+}
+html{
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+ul{
+  list-style: none;
+}
+
+body {
+  font-family: $f-work-sans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
