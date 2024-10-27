@@ -1,59 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
 
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="">
-    <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link rel="icon" type="image/png" sizes="16x16" href="">
-    <link rel="manifest" href="">
-    <link rel="mask-icon" href="" color="#">
-    <meta name="msapplication-TileColor" content="#">
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="">
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="icon" type="image/png" sizes="16x16" href="">
+  <link rel="manifest" href="">
+  <link rel="mask-icon" href="" color="#">
+  <meta name="msapplication-TileColor" content="#">
 
-    <!-- THEME COLOR -->
-    <meta name="theme-color" content="">
+  <!-- THEME COLOR -->
+  <meta name="theme-color" content="#FFFFFF">
 
-    <!-- FB AND TW CARD (CHANGE CONTENT IN IMAGE WITH THE URL IN PRODUCTION)-->
+  <!-- FB AND TW CARD (CHANGE CONTENT IN IMAGE WITH THE URL IN PRODUCTION)-->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="head/card.png">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="">
+  <meta property="twitter:image" content="head/card.png">
+  <meta property="twitter:description" content="">
 
-    <meta property="og:title" content="">
-    <meta property="og:image" content="head/card.png">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
+  <!-- METADATA -->
+  <link rel="canonical" href="#"/>
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <meta name="description" content="">
+  <title>Terra Frontend Trial</title>
+</head>
+<body>
 
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:title" content="">
-    <meta name="twitter:image" content="head/card.png">
-    <meta property="twitter:description" content="">
-
-    <!-- METADATA -->
-    <link rel="canonical" href="#"/>
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="">
-    <title>Terra Frontend Trial</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="wrapper">
-
+  <header class="navbar">
+    <div class="wrapper">
+      <div class="navbar__container">
+        <a class="navbar__logo" href="#">
+          <img src="https://tf-frontend.netlify.app/images/v1/logo.svg" alt="Logo">
+        </a>
+        <div class="navbar__menu">
+          <a class="navbar__menu-element" href="">Store</a>
+          <a class="navbar__menu-element" href="">Our Story</a>
+          <a class="navbar__menu-element" href="">Journal</a>
+        </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <section class="banner">
-      <div class="wrapper">
-
+  <section class="hero" style="background-image: url('https://tf-frontend.netlify.app/images/v1/bgimage.png');">
+    <div class="wrapper">
+      <div class="hero__container">
+        <h1 class="hero__title">Lorem Ipsum</h1>
+        <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula mauris, orci vel faucibus ac tincidunt.</p>
+        <a class="button button--primary" href="www.buttonlink.com" target="_blank">Button Label</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="blog">
-      <div class="wrapper">
+  <section class="body">
+    <div class="wrapper">
+      <div class="body__container">
+        <h2 class="body__title">Lorem Ipsum Dolor Sit Amet</h2>
+        <div class="body__posts">
 
+          <div class="body__post">
+            <div class="body__post-image" style="background-image: url('https://tf-frontend.netlify.app/images/v1/post_1.png');">
+              <div class="body__post-type body__post-type--pink">
+                <p>Type A</p>
+              </div>
+            </div>
+            
+            <div class="body__post-content">
+              <p class="body__post-date">23-02-22</p>
+              <p class="body__post-title">This is the title of the journal post.</p>
+            </div>
+          </div>
+          
+
+          <div class="body__post">
+            <div class="body__post-image" style="background-image: url('https://tf-frontend.netlify.app/images/v1/post_1.png');">
+              <div class="body__post-type body__post-type--pink">
+                <p>Type A</p>
+              </div>
+            </div>
+            
+            <div class="body__post-content">
+              <p class="body__post-date">23-02-22</p>
+              <p class="body__post-title">This is the title of the journal post.</p>
+            </div>
+          </div>
+
+
+          <div class="body__post">
+            <div class="body__post-image" style="background-image: url('https://tf-frontend.netlify.app/images/v1/post_1.png');">
+              <div class="body__post-type body__post-type--pink">
+                <p>Type A</p>
+              </div>
+            </div>
+            
+            <div class="body__post-content">
+              <p class="body__post-date">23-02-22</p>
+              <p class="body__post-title">This is the title of the journal post.</p>
+            </div>
+          </div>
+
+
+          <div class="body__post">
+            <div class="body__post-image" style="background-image: url('https://tf-frontend.netlify.app/images/v1/post_1.png');">
+              <div class="body__post-type body__post-type--green">
+                <p>Type A</p>
+              </div>
+            </div>
+            
+            <div class="body__post-content">
+              <p class="body__post-date">23-02-22</p>
+              <p class="body__post-title">This is the title of the journal post lorem.</p>
+            </div>
+          </div>
+
+        </div>
+        <a class="button button--primary" href="www.ourblog.com" target="_blank">Our Blog</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
