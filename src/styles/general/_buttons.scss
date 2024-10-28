@@ -1,0 +1,25 @@
+.button {
+  padding: 16px 40px;
+  display: flex;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-white;
+  width: fit-content;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: $color-text;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
