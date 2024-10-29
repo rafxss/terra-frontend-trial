@@ -1,4 +1,4 @@
-// Function to show a loader when startig the page
+// Function to show a loader when starting the page
 export function showLoader() {
   const loaderImage = document.querySelector('#loader img');
   setTimeout(() => { loaderImage.style.opacity = 1; }, 100);

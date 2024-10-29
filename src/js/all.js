@@ -1,4 +1,4 @@
-// Import all components to compile it
+// Import all components to compile them
 import "./src/main.js";
 import "./src/api.js";
 import "./src/config.js";

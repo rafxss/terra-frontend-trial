@@ -8,7 +8,7 @@ export function populatePage(data) {
 }
 
 function populateNavbar(navbar) {
-  // If navbar has no data or the logo has no url, show ERROR
+  // If navbar has no data or the logo has no URL, show an error
   if (navbar && navbar.logo.length > 0) {
     const headerElement = document.getElementById('navbar-section');
     headerElement.innerHTML = `
@@ -28,6 +28,7 @@ function populateNavbar(navbar) {
     `;
 
     const menuData = Object.values(navbar.menu);
+
     // Populate the menu
     if (menuData.length > 0) {
       menuData.slice(0, 5).forEach(link => {
@@ -37,12 +38,13 @@ function populateNavbar(navbar) {
         menuLinks.href = "#";
         document.getElementById("navbar-menu").appendChild(menuLinks);
       });
-    // Remove the menu in case the API retrieves no links
+
+    // Remove the menu if the API retrieves no links
     } else {
       document.getElementById("menu-toggle").remove();
     }
   } else {
-    showError("Error loading the logo url");
+    showError("Error loading the logo URL");
   }
 }
 
@@ -50,17 +52,16 @@ function populateHero(hero) {
   if (hero) {
     const { title, button_label, subtitle } = hero;
 
-    // Check for first visit and assign it to localStorage
+    // Check for first visit and store it in localStorage
     const firstVisit = !localStorage.getItem("visited");
     localStorage.setItem("visited", "true");
 
-    // Assign the first or second time accessing
+    // Assign the first or second time accessing text
     const titleText = firstVisit ? title.first_time_accessing : title.second_time_accessing;
     const buttonText = firstVisit ? button_label.first_time_accessing : button_label.second_time_accessing;
-
+    
+    // Check for title, button, and subtitle; show error if missing
     const heroSection = document.getElementById("hero-section");
-
-    // Check for title, button and subtitle, if there isn't, show error
     if (titleText && buttonText && subtitle) {
       heroSection.style.backgroundImage = `url(${hero.bg_image})`;
       heroSection.innerHTML = `
@@ -73,12 +74,12 @@ function populateHero(hero) {
         </div>
       `;
 
-      // Change button appaerance in case is not first visit
+      // Change button appearance if not first visit
       if (!firstVisit) {
         document.getElementById("hero-button").classList.replace("button--primary", "button--secondary");
       }
 
-      // Add shapes if exists
+      // Add shapes if they exist
       Object.values(hero.shapes).forEach(shape => {
         if (shape.length > 0) {
           const img = document.createElement("img");
@@ -115,11 +116,11 @@ function populateBody(body) {
     `;
 
     const postsContainer = document.getElementById("body-posts");
-    
-    // Loop within the posts
+
+    // Loop through the posts
     posts.forEach(post => {
 
-      // Assign a class depending of the Type
+      // Assign a class depending on the Type
       const classType = post.type.includes("Type A") ? "body__post-type--pink" : "body__post-type--green";
       const postDiv = document.createElement("div");
       postDiv.className = "body__post";
@@ -141,16 +142,15 @@ function populateBody(body) {
 
     const postsCount = postsContainer.children.length;
 
-    // Add a class to change layout depending of the number of posts, to better display all the elements
+    // Add a class to change layout depending on the number of posts, to better display all elements
     if (postsCount % 4 === 1) {
       postsContainer.classList.add("body__posts--five");
     }
-
     if (postsCount % 3 === 1) {
       postsContainer.classList.add("body__posts--three");
     }
-
-    // After the verfiication, if there are less than 2 post, show error
+    
+    // After verification, if there are fewer than 2 posts, show an error
     if (postsCount < 2) {
       showError("Not enough posts, error in loading body post images.");
     }

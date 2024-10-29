@@ -3,7 +3,7 @@ import { fadeOut } from './loader.js';
 import { showError } from './error.js';
 import { populatePage } from './populate.js';
 
-// Initialize the page
+// Function to initialize the app and fetch API data
 export function initializeApp() {
 
   // Add a promise to start another functions when is completed
@@ -13,18 +13,18 @@ export function initializeApp() {
     const storageKey = getStorageKey(urlParams);
     const postCount = getPostCount(urlParams);
 
-    // If the url includes refresh=true the data is not storage in localStorage
+    // If the url includes refresh=true the data is not locally storaged
     let data = urlParams.get('refresh') === 'true' ? null : localStorage.getItem(storageKey) ? JSON.parse(localStorage.getItem(storageKey)) : null;
 
-    // Populate with the data in localStorage
     if (data) {
+      // If data is found locally, populate the page and resolve the promise
       populatePage(data);
       setTimeout(() => {
         fadeOut(document.getElementById('loader'), 300);
         resolve();
       }, 1000);
     } else {
-      // Populate with API (For my personal API if the header inculdes a post_count, more posts are added)
+      // Populate with the API if data is not found locally (For my personal API if the header inculdes a post_count, more posts are added)
       fetch(urlApi, {
         method: "GET",
         headers: { ...(postCount && { "X-Post-Count": postCount }) }
@@ -42,6 +42,7 @@ export function initializeApp() {
         })
         .then(apiData => {
           if (apiData) {
+            // Store the fetched data locally and populate the page
             localStorage.setItem(storageKey, JSON.stringify(apiData));
             populatePage(apiData);
           }

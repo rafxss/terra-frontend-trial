@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Start the loader section
   showLoader();
 
-  // Initialize the app, when is completed the api add the event listeners of the menu
+  // Initialize the app, when completed, add the event listeners for the menu
   initializeApp()
     .then(() => {
       addNavbarEventListeners();

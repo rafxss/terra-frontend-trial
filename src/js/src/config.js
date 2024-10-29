@@ -1,14 +1,14 @@
-// Get an API depending of the utm
+// Get API URL depending on the address
 export function getApiUrl(urlParams) {
   return urlParams.get('api') === 'v2' ? "https://www.api.rafaferrera.com/terra.php" : "https://tf-frontend.netlify.app/trial";
 }
 
-// Get an storage key depending of the utm
+// Get storage key depending on the address
 export function getStorageKey(urlParams) {
   return urlParams.get('api') === 'v2' ? 'apiData2' : 'apiData';
 }
 
-// Get ad assing the post count depending of the utm
+// Get and assign the post count depending on the address
 export function getPostCount(urlParams) {
   let postCount = null;
   if (urlParams.get('api') === 'v2' && urlParams.get('post_count')) {
