@@ -36,5 +36,5 @@ jobs:
           VPS_HOST: ${{ secrets.VPS_HOST }}
           VPS_PATH: ${{ secrets.VPS_PATH }}
         run: |
-          sshpass -p "$SSH_PASSWORD" scp -o StrictHostKeyChecking=no -r dist/* head $VPS_USER@$VPS_HOST:$VPS_PATH
+          sshpass -p "$SSH_PRIVATE_KEY" scp -o StrictHostKeyChecking=no -r dist/* head $VPS_USER@$VPS_HOST:$VPS_PATH
 
