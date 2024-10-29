@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: '16'
       
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Install rsync and sshpass
         run: sudo apt-get install rsync sshpass -y
 
