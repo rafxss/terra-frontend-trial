@@ -1,88 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
+  <!-- Favicon -->
+  <link rel="icon" href="head/favicon.png">
+  <link rel="apple-touch-icon" href="head/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="head/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="head/favicon.png">
 
-    <!-- FAVICON -->
-    <link rel="icon" href="head/favicon.png">
-    <link rel="apple-touch-icon" href="head/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="head/favicon.png">
-    <link rel="apple-touch-icon" href="head/favicon.png">
-    <link rel="shortcut icon" type="image/png" href="head/favicon.png">
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#FFFFFF">
 
-    <!-- THEME COLOR -->
-    <meta name="theme-color" content="#FFFFFF">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.terra.rafaferrera.com/">
+  <meta property="og:title" content="Frontend Trial Rafa Ferrera | Terra">
+  <meta property="og:site_name" content="Frontend Trial Rafa Ferrera | Terra">
+  <meta property="og:description" content="This is my solution to Terra's Frontend Trial.">
+  <meta property="og:image" content="https://www.terra.rafaferrera.com/head/card.jpg">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.terra.rafaferrera.com/">
-    <meta property="og:title" content="Frontend Trial Rafa Ferrera | Terra">
-    <meta property="og:site_name" content="Frontend Trial Rafa Ferrera | Terra">
-    <meta property="og:description" content="This is my solution to Terra's Frontend Trial.">
-    <meta property="og:image" content="https://www.terra.rafaferrera.com/head/card.jpg>">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.terra.rafaferrera.com/">
+  <meta property="twitter:title" content="Frontend Trial Rafa Ferrera | Terra">
+  <meta property="twitter:description" content="This is my solution to Terra's Frontend Trial.">
+  <meta property="twitter:image" content="https://www.terra.rafaferrera.com/head/card.jpg">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.terra.rafaferrera.com/">
-    <meta property="twitter:title" content="Frontend Trial Rafa Ferrera | Terra">
-    <meta property="twitter:description" content="This is my solution to Terra's Frontend Trial.">
-    <meta property="twitter:image" content="https://www.terra.rafaferrera.com/head/card.jpg>">
+  <!-- Metadata -->
+  <link rel="canonical" href="https://www.terra.rafaferrera.com/"/>
+  <meta name="author" content="rafa ferrera">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <meta name="description" content="This is my solution to Terra's Frontend Trial.">
+  <title>Frontend Trial Rafa Ferrera | Terra</title>
+</head>
 
-    <!-- METADATA -->
-    <link rel="canonical" href="https://www.terra.rafaferrera.com/"/>
-    <meta name="author" content="rafa ferrera">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="This is my solution to Terra's Frontend Trial.">
-    <title>Terra Frontend Trial</title>
-  </head>
-  <body>
+<body>
 
-    <div class="loader" id="loader" style="height: 100vh;width: 100vw;background-color: white;position: fixed;">
-      <img src="src/assets/images/loader.gif" alt="loader" style="opacity:0">
-    </div>
+  <!-- Loader -->
+  <div class="loader" id="loader" style="height: 100vh;width: 100vw;background-color: white;position: fixed;">
+    <img src="src/assets/images/loader.gif" alt="loader" style="opacity:0">
+  </div>
 
-    <header class="navbar">
-      <div class="wrapper">
-        <div class="navbar__container">
-          <a class="navbar__logo" href="#">
-            <img id="navbar-logo" src="" alt="Logo">
-          </a>
-          <div class="navbar__menu" id="navbar-menu">
-          </div>
-          <a class="navbar__menu-toggle" id="menu-toggle">
-            <span class="navbar__menu-toggle-bar navbar__menu-toggle-bar--top"></span>
-            <span class="navbar__menu-toggle-bar navbar__menu-toggle-bar--middle"></span>
-            <span class="navbar__menu-toggle-bar navbar__menu-toggle-bar--bottom"></span>
-          </a>
-        </div>
-      </div>
-    </header>
+  <!-- Content Sections -->
+  <header class="navbar"></header>
+  <section class="hero" id="hero-section"></section>
+  <section class="body" id="body-section"></section>
 
-    <section class="hero" id="hero-section">
-      <div class="wrapper">
-        <div class="hero__container">
-          <h1 class="hero__title" id="hero-title"></h1>
-          <p class="hero__subtitle" id="hero-subtitle"></p>
-          <a class="button button--primary" id="hero-button" href="" target="_blank"></a>
-        </div>
-      </div>
-    </section>
+  <!-- Error Section -->
+  <div class="error" id="error-message">
+    <img src="src/assets/images/logo.svg" alt="Terra">
+    <p>Unable to load data. Please try again later.</p>
+  </div>
 
-    <section class="body" id="body-section">
-      <div class="wrapper">
-        <div class="body__container">
-          <h2 class="body__title" id="body-title"></h2>
-          <div class="body__posts" id="body-posts"></div>
-          <a class="button button--primary" id="body-button" href="" target="_blank"></a>
-        </div>
-      </div>
-    </section>
-
-    <div class="error" id="error-message">
-      <img src="src/assets/images/logo.svg" alt="Terra">
-      <p>Unable to load data. Please try again later.</p>
-    </div>
-
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <!-- Main JS -->
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>

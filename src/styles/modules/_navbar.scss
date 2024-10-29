@@ -10,7 +10,7 @@
     align-items: center;
     height: 100px;
 
-    @media(max-width:749px) {
+    @media (max-width: $breakpoint-sm) {
       height: 60px;
     }
   }
@@ -25,7 +25,7 @@
       z-index: 2;
       position: relative;
 
-      @media(max-width:749px) {
+      @media (max-width: $breakpoint-sm) {
         max-width: 122px;
         max-height: 24px;
       }
@@ -36,25 +36,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: $spacing-lg;
 
-    @media(max-width:749px) {
+    @media (max-width: $breakpoint-sm) {
       background-color: $color-white;
       height: 100vh;
       position: fixed;
       top: 0;
       right: -100%;
-      transition: transform .3s;
+      transition: transform 0.3s;
       width: 100vw;
       flex-direction: column;
       justify-content: center;
 
       &--open {
         transform: translateX(-100%);
-        transition: transform .3s;
+        transition: transform 0.3s;
       }
     }
-
 
     &-link {
       color: $color-text;
@@ -71,7 +70,7 @@
         height: 1px;
         left: 0;
         position: absolute;
-        transition: width .2s ease;
+        transition: width 0.2s ease;
         width: 0;
       }
 
@@ -79,32 +78,38 @@
         width: 100%;
       }
 
-      @media(max-width:749px) {
+      @media (max-width: $breakpoint-sm) {
         font-size: 50px;
         font-weight: 600;
+        text-wrap: wrap;
+        text-align: center;
+
         &:after {
           height: 2px;
         }
       }
 
-      @media(max-width:500px) {
+      @media (max-width: $breakpoint-xs) {
         font-size: 40px;
         font-weight: 600;
       }
-
     }
+
     &-toggle {
       height: 20px;
       width: 32px;
       position: relative;
       display: none;
       cursor: pointer;
+
       &, &:hover {
         color: $color-text;
       }
-      @media(max-width:749px) {
+
+      @media (max-width: $breakpoint-sm) {
         display: block;
       }
+
       &-bar {
         display: block;
         position: absolute;
@@ -115,23 +120,26 @@
         height: 2px;
         background-color: black;
         transition: all 0.3s ease;
-        &--top{
+
+        &--top {
           transform: translate(0, -8px);
         }
-        &--bottom{
+
+        &--bottom {
           transform: translate(0, 8px);
         }
       }
+
       &--open {
-        & .navbar__menu-toggle-bar--top {
+        .navbar__menu-toggle-bar--top {
           transform: translateY(0) rotate(45deg);
         }
 
-        & .navbar__menu-toggle-bar--middle {
+        .navbar__menu-toggle-bar--middle {
           opacity: 0;
         }
 
-        & .navbar__menu-toggle-bar--bottom {
+        .navbar__menu-toggle-bar--bottom {
           transform: translateY(0) rotate(-45deg);
         }
       }
