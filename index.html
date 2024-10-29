@@ -2,129 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Favicon -->
+  <link rel="icon" href="head/favicon.png">
+  <link rel="apple-touch-icon" href="head/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="head/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="head/favicon.png">
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="">
-  <link rel="icon" type="image/png" sizes="32x32" href="">
-  <link rel="icon" type="image/png" sizes="16x16" href="">
-  <link rel="manifest" href="">
-  <link rel="mask-icon" href="" color="#">
-  <meta name="msapplication-TileColor" content="#">
-
-  <!-- THEME COLOR -->
+  <!-- Theme Color -->
   <meta name="theme-color" content="#FFFFFF">
 
-  <!-- FB AND TW CARD (CHANGE CONTENT IN IMAGE WITH THE URL IN PRODUCTION)-->
-  <meta property="og:title" content="">
-  <meta property="og:image" content="head/card.png">
-  <meta property="og:description" content="">
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <meta property="twitter:title" content="">
-  <meta property="twitter:image" content="head/card.png">
-  <meta property="twitter:description" content="">
+  <meta property="og:url" content="https://www.terra.rafaferrera.com/">
+  <meta property="og:title" content="Frontend Trial Rafa Ferrera | Terra">
+  <meta property="og:site_name" content="Frontend Trial Rafa Ferrera | Terra">
+  <meta property="og:description" content="This is my solution to Terra's Frontend Trial.">
+  <meta property="og:image" content="https://www.terra.rafaferrera.com/head/card.jpg">
 
-  <!-- METADATA -->
-  <link rel="canonical" href="#"/>
-  <meta name="author" content="">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.terra.rafaferrera.com/">
+  <meta property="twitter:title" content="Frontend Trial Rafa Ferrera | Terra">
+  <meta property="twitter:description" content="This is my solution to Terra's Frontend Trial.">
+  <meta property="twitter:image" content="https://www.terra.rafaferrera.com/head/card.jpg">
+
+  <!-- Metadata -->
+  <link rel="canonical" href="https://www.terra.rafaferrera.com/"/>
+  <meta name="author" content="rafa ferrera">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-  <meta name="description" content="">
-  <title>Terra Frontend Trial</title>
+  <meta name="description" content="This is my solution to Terra's Frontend Trial.">
+  <title>Frontend Trial Rafa Ferrera | Terra</title>
 </head>
+
 <body>
 
-  <header class="navbar">
-    <div class="wrapper">
-      <div class="navbar__container">
-        <a class="navbar__logo" href="#">
-          <img src="https://tf-frontend.netlify.app/images/v1/logo.svg" alt="Logo">
-        </a>
-        <div class="navbar__menu">
-          <a class="navbar__menu-element" href="">Store</a>
-          <a class="navbar__menu-element" href="">Our Story</a>
-          <a class="navbar__menu-element" href="">Journal</a>
-        </div>
-      </div>
-    </div>
-  </header>
+  <!-- Loader -->
+  <div class="loader" id="loader" style="height: 100vh;width: 100vw;background-color: white;position: fixed;">
+    <img src="src/assets/images/loader.gif" alt="loader" style="opacity:0">
+  </div>
 
-  <section class="hero" style="background-image: url('https://tf-frontend.netlify.app/images/v1/bgimage.png');">
-    <div class="wrapper">
-      <div class="hero__container">
-        <h1 class="hero__title">Lorem Ipsum</h1>
-        <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula mauris, orci vel faucibus ac tincidunt.</p>
-        <a class="button button--primary" href="www.buttonlink.com" target="_blank">Button Label</a>
-      </div>
-    </div>
-  </section>
+  <!-- Content Sections -->
+  <header class="navbar" id="navbar-section"></header>
+  <section class="hero" id="hero-section"></section>
+  <section class="body" id="body-section"></section>
 
-  <section class="body">
-    <div class="wrapper">
-      <div class="body__container">
-        <h2 class="body__title">Lorem Ipsum Dolor Sit Amet</h2>
-        <div class="body__posts">
+  <!-- Error Section -->
+  <div class="error" id="error-message">
+    <img src="src/assets/images/logo.svg" alt="Terra">
+    <p>Unable to load data. Please try again later.</p>
+  </div>
 
-          <div class="body__post">
-            <div class="body__post-image" style="background-image: url('https://tf-frontend.netlify.app/images/v1/post_1.png');">
-              <div class="body__post-type body__post-type--pink">
-                <p>Type A</p>
-              </div>
-            </div>
-            
-            <div class="body__post-content">
-              <p class="body__post-date">23-02-22</p>
-              <p class="body__post-title">This is the title of the journal post.</p>
-            </div>
-          </div>
-          
-
-          <div class="body__post">
-            <div class="body__post-image" style="background-image: url('https://tf-frontend.netlify.app/images/v1/post_1.png');">
-              <div class="body__post-type body__post-type--pink">
-                <p>Type A</p>
-              </div>
-            </div>
-            
-            <div class="body__post-content">
-              <p class="body__post-date">23-02-22</p>
-              <p class="body__post-title">This is the title of the journal post.</p>
-            </div>
-          </div>
-
-
-          <div class="body__post">
-            <div class="body__post-image" style="background-image: url('https://tf-frontend.netlify.app/images/v1/post_1.png');">
-              <div class="body__post-type body__post-type--pink">
-                <p>Type A</p>
-              </div>
-            </div>
-            
-            <div class="body__post-content">
-              <p class="body__post-date">23-02-22</p>
-              <p class="body__post-title">This is the title of the journal post.</p>
-            </div>
-          </div>
-
-
-          <div class="body__post">
-            <div class="body__post-image" style="background-image: url('https://tf-frontend.netlify.app/images/v1/post_1.png');">
-              <div class="body__post-type body__post-type--green">
-                <p>Type A</p>
-              </div>
-            </div>
-            
-            <div class="body__post-content">
-              <p class="body__post-date">23-02-22</p>
-              <p class="body__post-title">This is the title of the journal post lorem.</p>
-            </div>
-          </div>
-
-        </div>
-        <a class="button button--primary" href="www.ourblog.com" target="_blank">Our Blog</a>
-      </div>
-    </div>
-  </section>
-
+  <!-- Main JS -->
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

@@ -9,12 +9,14 @@ $color-text: #0F0F0F;
 $font-family-main: 'Work Sans', sans-serif;
 $font-family-alt: 'Red Hat Display', sans-serif;
 
-// Tamaños de fuente
-// $font-size-small: 12px;
-// $font-size-medium: 16px;
-// $font-size-large: 20px;
+// Spacings
+$spacing-sm: 8px; //Check
+$spacing-md: 16px;
+$spacing-lg: 32px;
+$spacing-xl: 64px;
 
-// Espaciados
-// $spacing-small: 8px;
-// $spacing-medium: 16px;
-// $spacing-large: 32px;
+// Media Queries
+$breakpoint-xs: 550px;
+$breakpoint-sm: 749px;
+$breakpoint-md: 923px;
+$breakpoint-lg: 1232px;

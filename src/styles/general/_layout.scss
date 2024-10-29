@@ -1,29 +1,6 @@
 .wrapper {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding: 0 $spacing-md;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1232px;
+  max-width: $breakpoint-lg;
 }
-
-
-// FOR COPY PASTE IN ALL THE OTHERS MODULES
-
-@media (min-width:2000px) {}
-@media (min-width:1600px) {}
-@media (max-width: 1499px){}
-@media (max-width: 1399px){}
-@media (max-width: 1299px){}
-@media (max-width: 1199px){}
-@media (max-width: 1149px){}
-@media (max-width: 1099px){}
-@media(max-width: 999px){}
-@media(max-width: 899px){}
-@media(max-width: 799px){}
-@media(max-width: 699px){}
-@media(max-width: 599px){}
-@media(max-width: 499px){}
-@media(max-width: 399px){}
-@media(max-width: 349px){}
-@media(max-width: 330px){}
-@media(max-width: 300px){}
