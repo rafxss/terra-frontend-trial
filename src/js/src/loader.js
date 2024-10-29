@@ -1,8 +1,10 @@
+// Function to show a loader when startig the page
 export function showLoader() {
   const loaderImage = document.querySelector('#loader img');
   setTimeout(() => { loaderImage.style.opacity = 1; }, 100);
 }
 
+// Function to replicate a fadeOut of an element
 export function fadeOut(element, duration) {
   element.style.opacity = 1;
   let start = performance.now();
