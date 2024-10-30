@@ -120,27 +120,27 @@ For example, to refresh the page, use the new API, and display 8 posts, the URL 
 
 -  **Menu Layout**: I aligned the menu logo to match the width of other page components, as the rest of the menu was already aligned accordingly.
 
-![Menu layout](https://github.com/rafxss/terra-frontend-trial/blob/main/helper/layout.png)
+![Menu layout](https://github.com/rafxss/terra-frontend-trial/blob/main/helpers/layout.png)
 
 -  **Post Container Layout**: The layout adjusts based on the number of posts to ensure a balanced display across different screen sizes, avoiding any lone posts at the end.
 
-![Post Container Layout](https://github.com/rafxss/terra-frontend-trial/blob/main/helper/post_layout.png)
+![Post Container Layout](https://github.com/rafxss/terra-frontend-trial/blob/main/helpers/post_layout.png)
 
 -  **Text in Post Layout**: In Figma, the text was displayed in a narrower format. I adjusted it to full width without a fixed height, enabling a smoother scrolling experience on mobile.
 
-![Text in Post Layout](https://github.com/rafxss/terra-frontend-trial/blob/main/helper/post.png)
+![Text in Post Layout](https://github.com/rafxss/terra-frontend-trial/blob/main/helpers/post.png)
 
 ### Mobile Menu
 
 -  **Responsive Navbar**: Developed a responsive navigation menu that adapts seamlessly to different screen sizes, enhancing usability on mobile devices. This element was not included in the Figma design, but I considered it essential for enhanced functionality.
 
-![Menu mobile](https://github.com/rafxss/terra-frontend-trial/blob/main/helper/menu.png)
+![Menu mobile](https://github.com/rafxss/terra-frontend-trial/blob/main/helpers/menu.png)
 
 ### Error Handling
 
 - **Error Management**: Implemented error-handling mechanisms to display user-friendly messages when data fails to load. Specific error details are also logged in the console to assist in debugging.
 
-![Error message](https://github.com/rafxss/terra-frontend-trial/blob/main/helper/error.png)
+![Error message](https://github.com/rafxss/terra-frontend-trial/blob/main/helpers/error.png)
 
 ## Next Steps 🚀
 
@@ -158,7 +158,7 @@ I ran performance tests on sites like [PageSpeed Insights](https://pagespeed.web
 
 - **Accessibility Improvements**: Due to certain Figma design choices, some buttons lack adequate text-to-background contrast, which could be improved.
 
-![Contrast in buttons](https://github.com/rafxss/terra-frontend-trial/blob/main/helper/contrast.png)
+![Contrast in buttons](https://github.com/rafxss/terra-frontend-trial/blob/main/helpers/contrast.png)
 
   
 ### Design
