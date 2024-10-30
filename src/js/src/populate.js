@@ -14,7 +14,7 @@ function populateNavbar(navbar) {
     headerElement.innerHTML = `
       <div class="wrapper">
         <div class="navbar__container">
-          <a class="navbar__logo" href="#">
+          <a class="navbar__logo" href="/">
             <img id="navbar-logo" src="${navbar.logo}" alt="Logo">
           </a>
           <div class="navbar__menu" id="navbar-menu"></div>
@@ -69,7 +69,7 @@ function populateHero(hero) {
           <div class="hero__container">
             <h1 class="hero__title" id="hero-title">${titleText}</h1>
             <p class="hero__subtitle" id="hero-subtitle">${subtitle}</p>
-            <a class="button button--primary" id="hero-button" href="${hero.button_link}" target="_blank">${buttonText}</a>
+            <a class="button button--primary" id="hero-button" href="https://${hero.button_link}" target="_blank">${buttonText}</a>
           </div>
         </div>
       `;
@@ -110,7 +110,7 @@ function populateBody(body) {
         <div class="body__container">
           <h2 class="body__title" id="body-title">${body.title}</h2>
           <div class="body__posts" id="body-posts"></div>
-          <a class="button button--primary" id="body-button" href="${body.button_link}" target="_blank">${body.button_label}</a>
+          <a class="button button--primary" id="body-button" href="https://${body.button_link}" target="_blank">${body.button_label}</a>
         </div>
       </div>
     `;
