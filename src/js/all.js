@@ -1,8 +1,8 @@
 // Import all components to compile them
-import "./src/main.js";
-import "./src/api.js";
-import "./src/config.js";
-import "./src/error.js";
-import "./src/loader.js";
-import "./src/navbar.js";
-import "./src/populate.js";
+import "./components/main.js";
+import "./components/api.js";
+import "./components/config.js";
+import "./components/error.js";
+import "./components/loader.js";
+import "./components/navbar.js";
+import "./components/populate.js";

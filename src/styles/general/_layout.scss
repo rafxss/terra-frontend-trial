@@ -1,6 +1,9 @@
 .wrapper {
-  padding: 0 $spacing-md;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: $breakpoint-lg;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 0 $spacing-md;
+  }
 }
