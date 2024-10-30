@@ -47,7 +47,7 @@
     gap: $spacing-lg;
 
     @media (max-width: $breakpoint-sm) {
-      gap: $spacing-md; //24 PROBLEMA
+      gap: 24px;
     }
   }
 

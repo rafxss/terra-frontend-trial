@@ -3,7 +3,7 @@
   background-color: $color-background;
 
   @media (max-width: $breakpoint-sm) {
-    padding: $spacing-lg 0; //64 PROBLEMA
+    padding: $spacing-xl 0;
   }
 
   &__container {
@@ -82,7 +82,7 @@
 
       .body__post {
         @media (max-width: $breakpoint-lg) {
-          max-width: 343px;
+          max-width: calc(50% - $spacing-md);
         }
 
         @media (max-width: $breakpoint-sm) {
@@ -123,7 +123,7 @@
     &-type {
       border-radius: 19px;
       display: flex;
-      padding: $spacing-sm $spacing-md; // 12 PROBLEMA
+      padding: $spacing-sm $spacing-md;
       align-items: center;
       font-family: $font-family-work;
       font-size: 10px;

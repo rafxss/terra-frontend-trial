@@ -2,13 +2,13 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   build: {
-    minify: 'terser', // Indica a Vite que use Terser
+    minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: true, // Opcional: elimina los console.log en producción
+        drop_console: true,
       },
       format: {
-        comments: false, // Elimina los comentarios
+        comments: false,
       },
     }
   }
