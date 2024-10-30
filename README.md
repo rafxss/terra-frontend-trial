@@ -134,7 +134,7 @@ For example, to refresh the page, use the new API, and display 8 posts, the URL 
 
 -  **Responsive Navbar**: Developed a responsive navigation menu that adapts seamlessly to different screen sizes, enhancing usability on mobile devices. This element was not included in the Figma design, but I considered it essential for enhanced functionality.
 
-<img src="https://github.com/rafxss/terra-frontend-trial/raw/main/helpers/menu.png" alt="Menu mobile" style="max-width:300px">
+<img src="https://github.com/rafxss/terra-frontend-trial/raw/main/helpers/menu.png" alt="Menu mobile" width="300">
 
 ### Error Handling
 
