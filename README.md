@@ -12,7 +12,7 @@ You can view the project results in several ways:
     
 	  To refresh the data without storing it in localStorage, use `refresh=true`. If you want to use a new API (Created by me) and display a specific number of posts (for example, 8), you can enter the parameters `api=v2` and `post_count=8`.
 
-		[www.terra.rafaferrera.com?api=v2&post_count=8&refresh=true](https://www.terra.rafaferrera.com?api=v2&post_count=8&refresh=true)
+	[www.terra.rafaferrera.com?api=v2&post_count=8&refresh=true](https://www.terra.rafaferrera.com?api=v2&post_count=8&refresh=true)
 
 	> More details on this in the **Improvements** section.
                
