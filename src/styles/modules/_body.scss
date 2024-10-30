@@ -19,7 +19,7 @@
   }
 
   &__title {
-    font-family: $font-family-alt;
+    font-family: $font-family-redhat;
     font-size: 40px;
     letter-spacing: 1px;
     font-weight: 700;
@@ -125,7 +125,7 @@
       display: flex;
       padding: $spacing-sm $spacing-md; // 12 PROBLEMA
       align-items: center;
-      font-family: $font-family-main;
+      font-family: $font-family-work;
       font-size: 10px;
       font-weight: 700;
       width: fit-content;
@@ -150,7 +150,7 @@
     }
 
     &-date {
-      font-family: $font-family-alt;
+      font-family: $font-family-redhat;
       font-size: 10px;
       font-weight: 700;
     }
